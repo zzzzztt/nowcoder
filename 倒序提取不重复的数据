@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int a;
+    int list[10]={0};
+    scanf("%d",&a);
+    while(a>0){
+        int b = a%10;
+        if(!list[b]){//未出现
+            printf("%d",b);
+            list[b]=1;
+        }
+        a=a/10;
+    }
+}
